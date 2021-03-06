@@ -12,11 +12,11 @@ upstream:
     directory: environ/base
     ref: 1.0.0
 packageMetadata:
-  shortDescription: Base config for Environs
+  shortDescription: Base config for all clusters
 openAPI:
   definitions:
-    io.k8s.cli.setters.username:
+    io.k8s.cli.setters.cluster:
       x-k8s-cli:
         setter:
-          name: username
-          value: tenant-user@example.com
+          name: cluster
+          value: cluster-name
